@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <link rel="stylesheet" href="LandingPage.css"/> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        .main { 
+    width: 100%; 
+    min-height: 100vh; 
+} 
+.top { 
+    width: 100%; 
+    min-height: 70vh; 
+    background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"); 
+    background-size: cover; 
+ 
+} 
+.top .overlay { 
+    position: relative; 
+    width: 100%; 
+    min-height: inherit; 
+    background-color: rgba(0, 0, 0, 0.368); 
+ 
+} 
+.text { 
+    display: flex; 
+    justify-content: space-between; 
+    position: absolute; 
+    width: 100%; 
+    color: white; 
+    padding:0 10vh; 
+    bottom: 5%; 
+     
+} 
+.text .h1 { 
+    font-size: 4vw; 
+    font-weight: 600px; 
+ 
+} 
+.Image { 
+    background-image: url("https://hips.hearstapps.com/clv.h-cdn.co/assets/17/29/2048x1152/hd-aspect-1500566326-gettyimages-512366437-1.jpg"); 
+    background-size: cover; 
+    background-position:center; 
+   height: 300px; 
+   width: 250px;  
+} 
+.rtext { 
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center; 
+    width: 25%; 
+} 
+.rtext .p { 
+    font-size: 12px; 
+ 
+} 
+.icons { 
+    font-size: 30px; 
+} 
+.bottom { 
+    display: flex; 
+    width: 100%; 
+    min-height: 40vh; 
+} 
+.b1 { 
+    width: 30%; 
+    min-height: inherit; 
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/557/3/desktop-wallpaper-puppy-backgrounds-group-cute-dogs-and-puppies-for-mobile.jpg");
+    background-size: cover; 
+    background-position: center; 
+    
+} 
+.b1 h1{ 
+    width: 100%; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+    font-weight: bolder; 
+} 
+.b1 p{ 
+    padding: 15px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 17px; 
+    font-weight: 900px; 
+} 
+.b2 { 
+    width: 30%; 
+    min-height: inherit; 
+    display: flex; 
+    flex-direction: column; 
+     
+} 
+.b2 .up{ 
+    width: 100%; 
+    height:45vh; 
+    background-image: url("https://puffandfluffspa.com/wp-content/uploads/2017/08/Depositphotos_1979239_m-2015-1000x675.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+} 
+.up h1{ 
+    color:black; 
+    font-weight: bolder; 
+    text-align: center; 
+} 
+.up p { 
+    font-size: 15px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: white; 
+    padding: 15px; 
+} 
+.b2 .down { 
+    background-image: url("https://www.thelabradorsite.com/wp-content/uploads/2019/03/Black-Lab-Your-Guide-To-The-Black-Labrador-Retriever-LS-long-1.jpg"); 
+    background-size: cover; 
+    width: 100%; 
+    height: 45vh; 
+    background-color: rgba(0, 0, 0, 0.244); 
+
+} 
+.down h1 { 
+    color: whitesmoke; 
+     
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bolder; 
+    font-size: 35px; 
+    padding: 10px; 
+} 
+ 
+.b3{ 
+    width: 40%; 
+    min-height: inherit; 
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/labrador-puppy-royalty-free-image-1626252338.jpg?crop=0.667xw:1.00xh;0.173xw,0&resize=2048:*"); 
+    background-size: cover; 
+    background-position: center; 
+} 
+.b3 .overlay { 
+    justify-content: right; 
+    position: relative; 
+    width: 100%; 
+    height: 200%; 
+    padding: 4vh 3vh;   
+    text-align:center; 
+} 
+.b3 .overlay p { 
+    padding: 1.2vh; 
+    color: black; 
+    font-weight: bold; 
+} 
+ 
+@media(max-width:700px) { 
+    .text{ 
+        flex-direction: column; 
+        align-items: flex-start; 
+    } 
+     
+    .text .Image { 
+        height: 180px; 
+        width: 200px; 
+        margin: 8px; 
+    } 
+    .text .rtext { 
+        flex-direction: column; 
+        align-items: flex-start;    
+         
+    } 
+    .bottom {  
+        flex-direction: column; 
+        align-items: start; 
+    } 
+    .b1 { 
+        width: 100%; 
+    } 
+    .b2 { 
+        width: 100%; 
+         
+    } 
+    .b2 .up { 
+        height: 40vh; 
+    } 
+    .b2 .down { 
+        height: 30vh; 
+    } 
+    .b3 { 
+        width: 100% 
+    } 
+}
+    </style> 
+</head> 
+<body> 
+    <div class="main"> 
+        <div class="top"> 
+            <div class="overlay"> 
+                <div class="text"> 
+                    <h1>Images</h1> 
+                    <div class="Image"></div> 
+                    <div class="rtext"> 
+                        <p>Mesmerizing</p> 
+                        <p>Astonishing</p> 
+                    </div> 
+                    <div class="icons"> 
+                        <i class="ri-twitter-fill"></i> 
+                        <i class="ri-facebook-fill"></i> 
+                        <i class="ri-instagram-fill"></i> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="bottom"> 
+            <div class="b1"> 
+                <h1 class="b1-heading">Popular</h1> 
+                <p class="b1-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque quos earum reiciendis nobis aperiam obcaecati ut assumenda, qui tempore quidem delectus</p> 
+            </div> 
+            <div class="b2"> 
+                <div class="up"> 
+                    <h1>Latest</h1> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam architecto aliquid molestias accusamus quis</p> 
+                </div> 
+                <div class="down"> 
+                    <h1>More..</h1> 
+                </div> 
+            </div> 
+            <div class="b3"> 
+                <div class="overlay"> 
+                    <p>privacy policies</p> 
+                    <p>Terms and Conditions</p> 
+                    <p>Contact Us</p> 
+                    <p>About Us</p> 
+                </div>     
+            </div> 
+        </div> 
+    </div>    
+</body> 
+</html>
